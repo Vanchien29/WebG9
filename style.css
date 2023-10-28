@@ -10,7 +10,8 @@ ul{
 }
 
 a{
-    text-decoration: none;
+    color: inherit;
+    text-decoration: inherit;
 }
 
 .container{
@@ -82,7 +83,7 @@ cuong ul{
     display: flex;
     justify-content:space-between;
     align-items:flex-end;
-    font-size: 16px;
+    font-size: 18px;
 } 
 
 .hinh{
@@ -95,8 +96,7 @@ cuong ul{
 }
 
 #account:hover #options {
-    display: block; /* Hiển thị tùy chọn "Đăng nhập" và "Đăng ký" khi di chuột vào "Tài khoản" */
-    
+    display: block; /* Hiển thị tùy chọn "Đăng nhập" và "Đăng ký" khi di chuột vào "Tài khoản" */ 
 }
 
 .account{
@@ -130,19 +130,73 @@ cuong ul{
 .leading{
     padding: 0 15px;
     line-height: 1.2;
-    font-size: 13px;
     align-items: center;
     width: 120px;
     height: 38px;
     display: flex; 
 }
 
-button{
-    cursor :pointer;
+.leading:hover {
+    background-color: #faf6f6;
 }
+
+.car-list-show {
+    display: none;
+}
+
+.my-menu-button:hover .car-list-show {
+    transform: translate(-40px, 10px);
+    padding: 10px;
+    line-height: 1.8;
+    align-items: center;
+    display: flex; 
+    position: absolute;
+    background-color: #FFFFFF;
+    border: outset 1px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
 button{  
+    cursor :pointer;
     background-color: transparent;
     background-image: none;
     text-transform: none;
     border: #FFFFFF;
+}
+
+.px-4{
+    padding-right: 1rem;
+    padding-left: 20px;
+}
+
+.row-span-3{
+    grid-row: span 3/span 3;
+}
+
+.px-8{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.text-base{
+    font-size: 16px;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.column1{
+    padding: 0 10px;
+    font-weight: 400;
+    font-size: 15px;
+    align-items: center;
+    min-width: 100px;
+    width: 100%;
+    height: 38px;
+    display: flex;
+}
+
+.column1:hover{
+    background-color: #faf6f6;
 }
