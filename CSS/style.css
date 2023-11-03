@@ -37,7 +37,7 @@ li{
 header{
     background-color: #FFFFFF;
     text-align: center;
-    padding: 0 30px 10px 25px;
+    padding: 0 30px 10px 3px;
     border-bottom:outset 2px rgba(0, 0, 0, 0.1);
 }
 
@@ -257,7 +257,7 @@ button{
 }
 
 .hinh-1{
-    padding-left: 30px ;
+    padding-left: 0px ;
 }
 
 .hinh-2{
@@ -279,7 +279,7 @@ button{
 /* bảng bộ lọc*/
 .filter{
     font-size: 16px;
-    margin-left:45px;
+    margin-left:5px;
     background-color:#ffffffff;
     width: 18%;
     height: 400px;
@@ -293,7 +293,7 @@ button{
 
 .me{
     padding:20px;  
-    margin-left: 25px;  
+    margin-left: 45px;  
 }
 
 .me>ul{
