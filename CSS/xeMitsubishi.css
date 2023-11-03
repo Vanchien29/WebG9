@@ -3,6 +3,50 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    --tw-border-spacing-x: 0;
+    --tw-border-spacing-y: 0;
+    --tw-translate-x: 0;
+    --tw-translate-y: 0;
+    --tw-rotate: 0;
+    --tw-skew-x: 0;
+    --tw-skew-y: 0;
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    --tw-pan-x: ;
+    --tw-pan-y: ;
+    --tw-pinch-zoom: ;
+    --tw-scroll-snap-strictness: proximity;
+    --tw-ordinal: ;
+    --tw-slashed-zero: ;
+    --tw-numeric-figure: ;
+    --tw-numeric-spacing: ;
+    --tw-numeric-fraction: ;
+    --tw-ring-inset: ;
+    --tw-ring-offset-width: 0px;
+    --tw-ring-offset-color: #fff;
+    --tw-ring-color: rgba(22,93,152,.5);
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    --tw-blur: ;
+    --tw-brightness: ;
+    --tw-contrast: ;
+    --tw-grayscale: ;
+    --tw-hue-rotate: ;
+    --tw-invert: ;
+    --tw-saturate: ;
+    --tw-sepia: ;
+    --tw-drop-shadow: ;
+    --tw-backdrop-blur: ;
+    --tw-backdrop-brightness: ;
+    --tw-backdrop-contrast: ;
+    --tw-backdrop-grayscale: ;
+    --tw-backdrop-hue-rotate: ;
+    --tw-backdrop-invert: ;
+    --tw-backdrop-opacity: ;
+    --tw-backdrop-saturate: ;
+    --tw-backdrop-sepia: ;
 } 
 
 ul{
@@ -10,15 +54,9 @@ ul{
 }
 
 a{
-    color: inherit;
-    text-decoration: inherit;
+    text-decoration: none;
 }
 
-li{
-    list-style: none;
-}
-
-/* header */
 .container{
     max-width: 1450px;
 }
@@ -34,39 +72,38 @@ li{
     height: 32px;
 }
 
-header{
+nav{
     background-color: #FFFFFF;
     text-align: center;
-    padding: 0 30px 10px 25px;
+    padding: 0 6% 10px 3px;
     border-bottom:outset 2px rgba(0, 0, 0, 0.1);
 }
 
-header ul{
+nav ul{
     display: flex;
     justify-content:space-between;
     align-items:flex-end;
     font-size: 16px;
-    list-style: none;
 } 
 
-header ul li :nth-child(2) {
+nav ul li :nth-child(2) {
     position: relative;
 }
-header ul li:nth-child(2) input {
+nav ul li:nth-child(2) input {
     border-radius: 5px;
     padding-left: 5px;
     padding-right: 25px;
 }
-header ul li:nth-child(2) i {
+nav ul li:nth-child(2) i {
     right: 25px;
     cursor: pointer; /* Hiện bàn tay khi đưa con trỏ tới*/
 }
 
-header ul li:nth-child(8) i {
+nav ul li:nth-child(8) i {
     cursor: pointer;
 }
 
-header ul li:nth-child(3) i {
+nav ul li:nth-child(3) i {
     cursor: pointer;
 }
 
@@ -79,7 +116,7 @@ header ul li:nth-child(3) i {
     border: 2px outset;
 }
 
-cuong{    /*hình ảnh giới thiệu */
+cuong{
     background-color: #FFFFFF;
     text-align: center;
     padding: 15px 15px 15px 15px;
@@ -90,22 +127,31 @@ cuong ul{
     display: flex;
     justify-content:space-between;
     align-items:flex-end;
-    font-size: 18px;
+    font-size: 16px;
 } 
 
- .options {   /*Tài Khoản*/
+.hinh{
+    margin-left: 10px;
+    margin-right: 10px;  
+}
+
+ .options {
     display: none; /* Ẩn tùy chọn "Đăng nhập" và "Đăng ký" ban đầu  */
 }
 
 #account:hover #options {
-    display: block; /* Hiển thị tùy chọn "Đăng nhập" và "Đăng ký" khi di chuột vào "Tài khoản" */ 
+    display: block; /* Hiển thị tùy chọn "Đăng nhập" và "Đăng ký" khi di chuột vào "Tài khoản" */
+    
+}
+.cach{
+    margin: 12.5px;
 }
 
-.account{  /*Tài Khoản*/
+.account{
     position: absolute; 
     inset: 0px auto auto 0px; 
     margin: 0px; 
-    transform: translate3d(1365px, 60px, 0px);
+    transform: translate3d(1348px, 60px, 0px);
     padding: 10px 0;
     /* position: relative;
     margin-top: 14px;
@@ -113,7 +159,7 @@ cuong ul{
 
 }
 
-.account{  /*Tài Khoản*/
+.account{
     background-color: #FFFFFF;
     color:rgba(0, 0, 0, 0.87);
     transition: box-shadow 300ms
@@ -123,131 +169,30 @@ cuong ul{
                     rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, 
                     rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;  
 }
-.jss3{   /*Tài Khoản*/
+.jss3{
     top: -6px;
     right: 22px;
     position: absolute;
 }
 
-.leading{  /*Đăng nhập, đăng kí*/
+.leading{
     padding: 0 15px;
     line-height: 1.2;
+    font-size: 13px;
     align-items: center;
     width: 120px;
     height: 38px;
     display: flex; 
 }
 
-.leading:hover {
-    background-color: #faf6f6;
-}
-
-.car-list-show {  /*Mua xe*/
-    display: none;
-}
-
-.my-menu-button:hover .car-list-show {  /*Mua xe*/
-    transform: translate(-40px, 10px);
-    padding: 10px;
-    line-height: 1.8;
-    align-items: center;
-    display: flex; 
-    position: absolute;
-    background-color: #FFFFFF;
-    border: outset 1px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-}
-
-button{  
+button{
     cursor :pointer;
+}
+button{  
     background-color: transparent;
     background-image: none;
     text-transform: none;
     border: #FFFFFF;
-}
-
-.px-4{ /* Hãng xe phổ biến, giá xe*/
-    padding-right: 1rem;
-    padding-left: 20px;
-}
-
-.row-span-3{ /* 3 cột*/
-    grid-row: span 3/span 3;
-}
-
-.px-8{ /*Dòng xe phổ biến*/
-    padding-left: 2rem;
-    padding-right: 2rem;
-}
-
-.text-base{  /*Dòng tiêu đề h2*/
-    font-size: 16px;
-    display: block;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-family:Arial, Helvetica, sans-serif;
-}
-
-.column1{ /*Các cột phụ*/
-    padding: 0 10px;
-    font-weight: 400;
-    font-size: 15px;
-    align-items: center;
-    min-width: 100px;
-    width: 100%;
-    height: 38px;
-    display: flex;
-}
-
-.column1:hover{
-    background-color: #faf6f6;
-}
-
-.mb-2{
-    margin-bottom: 0.5rem;
-}
-
-.text-sm{
-    font-weight: 500;
-    font-size: 13px;
-    margin-top: 1rem;
-}
-
-.inline{
-    align-items: center;
-    display: inline-flex;
-}
-
-.inline{
-    float: left;
-}
-
-.inline-flex{
-    --tw-text-opacity: 1;
-    color: rgb(55 65 81/var(--tw-text-opacity));
-    align-items: center;
-    display: inline-flex;
-    padding-right: 5px;
-}
-
-.icon-chevron-right{
-    font-style: normal;
-    font-weight: 400;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-}
-
-.\!mx-0{
-    margin-left: 0!important;
-    margin-right: 0!important;
-}
-
-.text-bx{
-    --tw-text-opacity: 1;
-    color: rgb(26 111 183/var(--tw-text-opacity));
-    padding-left: 7px ;
 }
 .left-column {
     width: 60%;
@@ -749,6 +694,10 @@ button, input, optgroup, select, textarea {
     margin: 0;
     padding: 0;
 }
+*, :after, :before {
+    box-sizing: border-box;
+    border: 0 solid #e5e7eb;
+}
 .margin-bot{
     margin-bottom: 24px;
 }
@@ -1034,6 +983,10 @@ h3
 #y .newItem .btn-action button:hover {
     background-color: blue;
     color: white;
+}
+li{
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
 .anh{
     height: 183px;
