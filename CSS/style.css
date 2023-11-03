@@ -310,7 +310,7 @@ button{
 /* thông tin các xe */
 .main{ 
     float:left;
-    width:1200px;
+    width: 77%;
     height:auto;
     background-color:#FFFFFFFF;
 }
@@ -351,7 +351,7 @@ button{
 .content-items{
     margin-top:20px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .content-item{
