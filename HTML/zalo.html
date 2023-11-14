@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="Zalo - Van Chien">
+        <script src="http://ctcy.com" crossorigin="test"></script>
+        <link rel="icon" href="../image/Logo-Zalo-Arc.jpg">
+        <link rel="stylesheet" href="../CSS/zalo.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Zalo - Văn Chiến</title>
+    </head>
+    <body>
+        <div id="root">
+            <header class="header">
+                <a title="Zalo" target="_blank" rel="noreferrer">
+                    <img class="header-logo" src="../image/zalo-logo.png" alt="Logo">
+                </a>
+                <ul class="header-list">
+                    <li class="relative">
+                        <button id="language-menu" class="header-language" title="Thay đổi ngôn ngữ hiển thị" type="button" aria-haspopup="listbox"
+                        data-vn="Tiếng việt" data-en="English">
+                            Ngôn ngữ: 
+                            <mark class="header-highlight">
+                                <span id="current-language" >Tiếng Việt</span>
+                                <svg fill="none" viewBox="0 0 16 16" width="16" height="16">
+                                    <path fill="#0068ff" fill-rule="evenodd" d="M3.87 6.282a.6.6 0 0 1 .848-.012L8 9.463l3.281-3.193a.6.6 0 0 1 
+                                    .837.86l-3.7 3.6a.6.6 0 0 1-.836 0l-3.7-3.6a.6.6 0 0 1-.012-.848Z" clip-rule="evenodd"></path>
+                                </svg>
+                            </mark>
+                        </button>
+                        <ul class="header-language-menu" role="listbox" tabindex="-1" aria-labelledby="language-menu" aria-multiselectable="false">
+                            <li id="btnVietnamese" role="option" class="header-language-menu-item chosen" aria-selected="true" data-index="0">
+                                Tiếng Việt
+                            </li>
+                            <li id="btnEnglish" role="option" class="header-language-menu-item hovered" aria-selected="false" data-index="1">
+                                English
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </header>
+            <div class="app-content">
+                <main class="section-main">
+                    <div class="main-info">
+                        <div class="main-profile-name">
+                            <img class="main-avatar" src="../image/avatar.jpg" alt="Avatar">
+                            <div>
+                                <h1 class="main-name">Văn Chiến</h1>
+                                <div class="main-profile-type">Liên hệ</div>
+                                <button type="button" class="button-medium" title="Nhắn tin qua Zalo" aria-pressed="false" style="width: 240px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 25 24" width="24" height="24" style="margin-right: 8px;">
+                                        <path fill="#ffffff" fill-rule="evenodd" d="M16.2 4.563a8.315 8.315 0 0 0-3.687-.863 8.315 8.315 0 0 0-7.217 4.198 8.294 8.294 0 0 0 
+                                        .08 8.342c.141.238.198.516.16.79l-.27 1.88v.08a.28.28 0 0 0 .28.24l1.922-.27h.17c.218 0 .432.06.62.17a8.315 8.315 0 0 0 10.452-1.603 
+                                        8.299 8.299 0 0 0 1.959-7.103A8.295 8.295 0 0 0 16.2 4.563Zm-8.473-.774A9.517 9.517 0 0 1 12.513 2.5a9.518 9.518 0 0 1 7.55 3.753 
+                                        9.496 9.496 0 0 1-4.017 14.558 9.518 9.518 0 0 1-8.408-.641l-1.882.27h-.21a1.483 1.483 0 0 1-1.472-1.69l.27-1.88A9.493 9.493 0 0 1 7.728 
+                                        3.789ZM7.739 10a.6.6 0 0 1 .6-.6h6.347a.6.6 0 1 1 0 1.2H8.339a.6.6 0 0 1-.6-.6Zm0 3.5a.6.6 0 0 1 .6-.6h2.933a.6.6 0 1 1 0 1.2H8.34a.6.6 0 0 1-.6-.6Z" 
+                                        clip-rule="evenodd"></path>
+                                    </svg>
+                                    Nhắn tin
+                                </button>
+                            </div>
+                        </div>
+                        <div>
+                            <h2>Giới thiệu bản thân</h2>
+                            <div class="profile-description">Người dùng chưa có thông tin mô tả</div>
+                        </div>
+                    </div>
+                    <figure class="main-qr-block">
+                        <img class="main-qr" src="../image/QR.jpg" alt="QR-code">
+                        <figcaption class="main-help-text">Mở Zalo, bấm quét QR để quét và xem trên điện thoại</figcaption>
+                    </figure>
+                </main>
+            </div>
+            <footer class="footer">© Copyright 2023 Zalo Group. All right Reserved.</footer>
+        </div>
+    </body>
+    <script src="../javascript/"></script>
+</html>

@@ -16,7 +16,8 @@
         <header>
             <div class="container">
                 <ul>
-                    <li class="logo"><img src="../image/logo.jpg" alt="Không tìm thấy ảnh" style="width: 100%; height: 100%;"></li>
+                    <li class="logo"><a href="../HTML/index.html"><img src="../image/logo.jpg" alt="Không tìm thấy ảnh"
+                        style="width: 100%; height: 100%;"></a></li>
                     <li class="khung "><input type="text" id="myInput" placeholder="Tim kiếm xe" style="font-size: 14px;"> <i class="fa fa-search"></i></li>
                     <li class="khung my-menu-button" id="account"><a href="">Mua xe </a><i class="fa fa-angle-down" aria-hidden="true"></i>
                         <div role="tooltip" class="car-list-show" data-popper-placement="bottom-start">
@@ -41,7 +42,7 @@
                         </div>
                     </li>
                     <li class="khung"><a href="../HTML/banxe.html">Bán xe</a></li>
-                    <li class="khung"><a href="">Giới thiệu</a></li>
+                    <li class="khung"><a href="../HTML/GioiThieu.html">Giới thiệu</a></li>
                     <li class="khung"><a href="../HTML/tintuc.html">Tin tức</a></li>
                     <li class="khung"><i class="fa fa-phone"></i><a href=""> 0962 385 165</a></li>
                     <li class="khung" id="account"><i class="fa fa-user-circle-o"></i>  <a href="">Tài khoản </a><i class="fa fa-angle-down" aria-hidden="true"></i>
@@ -149,12 +150,14 @@
                                         </span>
                                         <span id="cls">Gọi cho người bán</span>
                                     </button>
-                                    <button class="cuong-button-contained-primary-right px-4 py-3 text-[12px] md:text[15px cuong-center gap-2">
-                                        <span>
-                                            <img src="../image/tinnhan.png"  class="image">
-                                        </span>
-                                        <span>Nhắn tin cho người bán</span>
-                                    </button>
+                                    <a href="../HTML/zalo.html">
+                                        <button class="cuong-button-contained-primary-right px-4 py-3 text-[12px] md:text[15px cuong-center gap-2">
+                                            <span>
+                                                <img src="../image/tinnhan.png"  class="image">
+                                            </span>
+                                            <span>Nhắn tin cho người bán</span>
+                                        </button>
+                                    </a>
                                 </div>
                             </div>
                     </div>
@@ -282,28 +285,49 @@
                 Xe tương tự
             </span>
     
-            <a class="loz" href="https://www.carmudi.vn/xe-o-to/"> <button>Xem tất cả</button> </a>
+            <a class="loz" href="../HTML/index.html"> <button>Xem tất cả</button> </a>
     
         </div>  
     
         <div id="y" class="top2 ">
             <div class="newItem">
-                <a href="../HTML/xeMitsubishi.html">
-                <img id="xe" src="../image/Mitsubishi Attrage.jpg" alt="Attrage 2022" style="height: 183px; width: 324px;" title="Attrage 2022 siêu lướt nuột nà óng ánh">
+                <a href="../HTML/xeCarnival.html">
+                <img id="xe" src="../image/carival.png" alt="Attrage 2022" style="height: 183px; width: 324px;" title="Attrage 2022 siêu lướt nuột nà óng ánh">
                 <div class="content">
                     <div>
-                        <h3>Bán xe Mitsubishi Attrage 2022 siêu lướt</h3>
+                        <h3>Bán xe Kia Carnival 2022 siêu lướt</h3>
+                        <br>
                     </div>
-                    <div>
-                        <ul>
-                            <li>Sản xuất : 2022</li>
-                            <li>Số km đã đi: 6.000km</li>
-                            <li>Xăng</li>
-                            <li>Số tự động</li>
-                        </ul>
-                    </div>
-                    <div id="gia">
-                        370.000.000 VNĐ
+                    <ul class="tc-thongtin-mieuta">
+                        <li class="tc-thongtin-mieuta-1">
+                            <span class="tc-thongtin-mieuta-2">
+                                <img class="tc-thongtin-mieuta-3" alt="" src="../image/year.png">
+                            </span>
+                            <div class="tc-thongtin-mieuta-4">2022</div>
+                        </li>
+                        <li class="tc-thongtin-mieuta-1-1">
+                            <span class="tc-thongtin-mieuta-2">
+                                <img class="tc-thongtin-mieuta-3" alt="" src="../image/km.png">
+                            </span>
+                            <div class="tc-thongtin-mieuta-4">10.000km</div>
+                        </li>
+                        <li class="tc-thongtin-mieuta-1">
+                            <span class="tc-thongtin-mieuta-2">
+                                <img class="tc-thongtin-mieuta-3" alt="" src="../image/xang.png">
+                            </span>
+                            <div class="tc-thongtin-mieuta-4">Dầu</div>
+                        </li>
+                        <li class="tc-thongtin-mieuta-1-1">
+                            <span class="tc-thongtin-mieuta-2">
+                                <img class="tc-thongtin-mieuta-3" alt="" src="../image/hopso.png">
+                            </span>
+                            <div class="tc-thongtin-mieuta-4">Tự động</div>
+                        </li>
+                    </ul>
+                    <h3 class="tc-thongtin-tien">1 tỷ 350 triệu</h3>
+                    <div class="tc-thongtin-diachi">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <div style="font-size: 10px; margin-left: 0.2rem;">Hồ Chí Minh - Quận 5</div>
                     </div>
                 </div>
             </a>
@@ -313,17 +337,40 @@
                 <img id="xe" src="../image/Toyota Inova.png" alt="Innova 2022" style="height: 183px; width: 324px;" title="Innova 2022 bạc như mới">
                 <div class="content">
                     <div>
-                        <h3>Bán xe Toyota Innova 2022 cực đẹp <h3>
+                        <h3>Bán xe Toyota Innova 2022 cực đẹp</h3>
+                        <br>
                     </div>
-                    <div>
-                        <ul>
-                            <li>Sản xuất : 2022</li>
-                            <li>Số km đã đi: 32.000km</li>
-                            <li>Xăng</li>
-                            <li>Số sàn</li>
-                        </ul>
+                    <ul class="tc-thongtin-mieuta">
+                        <li class="tc-thongtin-mieuta-1">
+                            <span class="tc-thongtin-mieuta-2">
+                                <img class="tc-thongtin-mieuta-3" alt="" src="../image/year.png">
+                            </span>
+                            <div class="tc-thongtin-mieuta-4">2022</div>
+                        </li>
+                        <li class="tc-thongtin-mieuta-1-1">
+                            <span class="tc-thongtin-mieuta-2">
+                                <img class="tc-thongtin-mieuta-3" alt="" src="../image/km.png">
+                            </span>
+                            <div class="tc-thongtin-mieuta-4">32.000km</div>
+                        </li>
+                        <li class="tc-thongtin-mieuta-1">
+                            <span class="tc-thongtin-mieuta-2">
+                                <img class="tc-thongtin-mieuta-3" alt="" src="../image/xang.png">
+                            </span>
+                            <div class="tc-thongtin-mieuta-4">Xăng</div>
+                        </li>
+                        <li class="tc-thongtin-mieuta-1-1">
+                            <span class="tc-thongtin-mieuta-2">
+                                <img class="tc-thongtin-mieuta-3" alt="" src="../image/hopso.png">
+                            </span>
+                            <div class="tc-thongtin-mieuta-4">Số sàn</div>
+                        </li>
+                    </ul>
+                    <h3 class="tc-thongtin-tien">610 triệu</h3>
+                    <div class="tc-thongtin-diachi">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <div style="font-size: 10px; margin-left: 0.2rem;">Hồ Chí Minh - Quận 5</div>
                     </div>
-                    <div id="gia">610.000.000 VNĐ</div>
                 </div>
             </a>
             </div>
@@ -332,17 +379,40 @@
                 <img id="xe" src="../image/mazda.png" alt="Mazda Cx5 2021" style="height: 183px; width: 324px;" title="Mazda Cx5 2021">
                 <div class="content">
                     <div>
-                        <h3>Bán xe Mazda CX5 2.0 Luxury đời 2020 </h3>
+                        <h3>Bán xe Mazda CX5 2.0 Luxury đời 2020</h3>
+                        <br>
                     </div>
-                    <div>
-                        <ul>
-                            <li>Sản xuất : 2020</li>
-                            <li>Số km đã đi: 50.000km</li>
-                            <li>Xăng</li>
-                            <li>Số tự động</li>
-                        </ul>
+                    <ul class="tc-thongtin-mieuta">
+                        <li class="tc-thongtin-mieuta-1">
+                            <span class="tc-thongtin-mieuta-2">
+                                <img class="tc-thongtin-mieuta-3" alt="" src="../image/year.png">
+                            </span>
+                            <div class="tc-thongtin-mieuta-4">2020</div>
+                        </li>
+                        <li class="tc-thongtin-mieuta-1-1">
+                            <span class="tc-thongtin-mieuta-2">
+                                <img class="tc-thongtin-mieuta-3" alt="" src="../image/km.png">
+                            </span>
+                            <div class="tc-thongtin-mieuta-4">50.000km</div>
+                        </li>
+                        <li class="tc-thongtin-mieuta-1">
+                            <span class="tc-thongtin-mieuta-2">
+                                <img class="tc-thongtin-mieuta-3" alt="" src="../image/xang.png">
+                            </span>
+                            <div class="tc-thongtin-mieuta-4">Xăng</div>
+                        </li>
+                        <li class="tc-thongtin-mieuta-1-1">
+                            <span class="tc-thongtin-mieuta-2">
+                                <img class="tc-thongtin-mieuta-3" alt="" src="../image/hopso.png">
+                            </span>
+                            <div class="tc-thongtin-mieuta-4">Tự động</div>
+                        </li>
+                    </ul>
+                    <h3 class="tc-thongtin-tien">600 triệu</h3>
+                    <div class="tc-thongtin-diachi">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <div style="font-size: 10px; margin-left: 0.2rem;">Hồ Chí Minh - Quận 5</div>
                     </div>
-                    <div id="gia">600.000.000 VNĐ</div>
                 </div>
             </a>
             </div>
@@ -352,16 +422,39 @@
                 <div class="content">
                     <div>
                         <h3>Bán xe Honda City 2022 siêu lướt</h3>
+                        <br>
                     </div>
-                    <div>
-                        <ul>
-                            <li>Sản xuất : 2022</li>
-                            <li>Số km đã đi: 4.000km</li>
-                            <li>Xăng</li>
-                            <li>Số tự động</li>
-                        </ul>
+                    <ul class="tc-thongtin-mieuta">
+                        <li class="tc-thongtin-mieuta-1">
+                            <span class="tc-thongtin-mieuta-2">
+                                <img class="tc-thongtin-mieuta-3" alt="" src="../image/year.png">
+                            </span>
+                            <div class="tc-thongtin-mieuta-4">2022</div>
+                        </li>
+                        <li class="tc-thongtin-mieuta-1-1">
+                            <span class="tc-thongtin-mieuta-2">
+                                <img class="tc-thongtin-mieuta-3" alt="" src="../image/km.png">
+                            </span>
+                            <div class="tc-thongtin-mieuta-4">4.000km</div>
+                        </li>
+                        <li class="tc-thongtin-mieuta-1">
+                            <span class="tc-thongtin-mieuta-2">
+                                <img class="tc-thongtin-mieuta-3" alt="" src="../image/xang.png">
+                            </span>
+                            <div class="tc-thongtin-mieuta-4">Xăng</div>
+                        </li>
+                        <li class="tc-thongtin-mieuta-1-1">
+                            <span class="tc-thongtin-mieuta-2">
+                                <img class="tc-thongtin-mieuta-3" alt="" src="../image/hopso.png">
+                            </span>
+                            <div class="tc-thongtin-mieuta-4">Tự động</div>
+                        </li>
+                    </ul>
+                    <h3 class="tc-thongtin-tien">630 triệu</h3>
+                    <div class="tc-thongtin-diachi">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <div style="font-size: 10px; margin-left: 0.2rem;">Hồ Chí Minh - Quận 5</div>
                     </div>
-                    <div id="gia">630.000.000 VNĐ</div>
                 </div>
             </a>
             </div>
