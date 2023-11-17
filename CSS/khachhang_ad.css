@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+} 
+
+ul{
+    list-style: none;
+    overflow: hidden;
+}
+
+a{
+    color: inherit;
+    text-decoration: inherit;
+}
+
+li{
+    list-style: none;
+}
+/* header */
+.container{
+    max-width: 1450px;
+}
+
+header{
+    background-color: #FFFFFF;
+    text-align: center;
+    padding: 0 30px 10px 25px;
+    border-bottom:outset 2px rgba(0, 0, 0, 0.1);
+}
+
+header ul{
+    display: flex;
+    justify-content:space-between;
+    font-size: 16px;
+    list-style: none;
+    align-items: center;
+} 
+
+.logo{
+    width: 10%;
+    height: 4%;
+    display: flex;
+    justify-content: left;
+}
+
+.khung{
+    height: 20px;
+    display: flex;
+    position: relative;
+}
+
+.hinh{
+    width: 5rem;
+    height: 5rem;
+}
+
+header .khung span {
+    position: absolute;
+    display: none;
+    top: 200%;
+    z-index: 10;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    border: 1px solid #EEEE;
+    padding: 5px;
+    width: 100px;
+}
+
+header .fullname-user {
+    max-width: 20%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-top: 0.8rem;
+}
+
+/* body */
+/* tìm kiếm khách hàng */
+.grid.wide {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.search-customer-bg, .list-customers {
+    position: relative;
+    top: 50px;
+    width: 100%;
+}
+.grid {
+    width: 100%;
+    display: block;
+    padding: 0;
+}
+.search-customer-bg .search-customer-box {
+    width: 100%;
+    border-radius: 5px;
+    border: solid;
+    margin: 0 auto;
+    display: flex;
+    padding: 10px 0;
+}
+.search-customer-bg .search-date {
+    width: 60%;
+    border-right: solid;
+    margin: auto;
+    padding-left: 10px;
+}
+.search-customer-bg label:nth-child(1) {
+    margin-left: 0;
+}
+.search-customer-bg input, .search-customer-bg label {
+    margin-left: 20px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.search-customer-bg input, .search-customer-bg select {
+    padding: 5px;
+    border-radius: 5px;
+    border: solid;
+    outline: none;
+    margin-left: 10px;
+}
+.search-customer-bg input, .search-customer-bg label {
+    margin-left: 20px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.search-customer-bg button {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    margin-left: 20px;
+    font-weight: bold;
+    min-width: 10%;
+}
+.search-customer-bg .search-txt {
+    width: 40%;
+}
+.search-customer-bg select {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+/* danh sách khách hàng */
+.list-customers {
+    top: 70px;
+    text-align: center;
+    padding: 10px 40px;
+    font-size: 15px;
+    font-weight: 900;
+    border: solid;
+    border-radius: 5px;
+}
+.list-customers p {
+    margin-bottom: 10px;
+}
+.list-customers p, .search-customer-bg p, .info-customer-bg p {
+    font-weight: 900;
+    font-size: 25px;
+    text-align: center;
+}
+.not-found {
+    font-size: 25px;
+    padding: 50px;
+    border: solid;
+    border-radius: 10px;
+}
+
+.hide {
+    display: none;
+}
+.customers > li:not(:last-child) {
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+.top-list {
+    background-color: rgb(134, 134, 181);
+    color: black;
+}
+.list-customers .top-list ul, .list-customers .customer ul {
+    display: flex;
+    width: 100%;
+    border: none;
+}
+.top-list ul li:nth-child(1) {
+    line-height: 30px;
+    width: 10%;
+}
+.top-list ul > li:not(:last-child) {
+    border-right: 1px solid black;
+}
+li {
+    list-style: none;
+    overflow: hidden;
+}
+.top-list ul li:nth-child(2) {
+    line-height: 30px;
+    width: 25%;
+}
+.top-list ul li:nth-child(3) {
+    line-height: 30px;
+    width: 20%;
+}
+.top-list ul li:nth-child(4) {
+    width: 20%;
+    line-height: 30px;
+}
+.top-list ul li:nth-child(5) {
+    width: 15%;
+    line-height: 30px;
+    margin-left: 3.5rem;
+}
+.customers > li:last-child {
+    border: solid 1px black;
+}
+.list-customers .customer ul li:not(:last-child) {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.customer ul li:nth-child(1) {
+    width: 10%;
+}
+.customer ul > li:not(:last-child) {
+    border-right: 1px solid black;
+}
+.customer ul li:nth-child(2) {
+    width: 25%;
+}
+.customer ul li:nth-child(3) {
+    width: 20%;
+}
+.customer ul li:nth-child(4) {
+    width: 20%;
+}
+.customer ul li:nth-child(5) {
+    width: 15%;
+    padding: 10px;
+    margin-left: 3.5rem;
+}
+.btn {
+    position: relative;
+}
+.list-customers button {
+    border: none;
+    padding: 2px;
+    margin-top: 5px;
+    width: 90%;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: white;
+}
+.btn span {
+    display: none;
+    position: absolute;
+    top: 103%;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #272424c4;
+    color: white;
+    padding: 5px;
+    left: 0;
+    z-index: 10;
+}
+.lock-customer {
+    background-color: #535151;
+}
+.delete-customer {
+    background-color: rgb(195, 73, 73);
+}
+.info-customer {
+    background-color: rgb(80, 80, 201);
+}
+.list-page {
+    padding: 10px;
+    text-align: center;
+    list-style: none;
+}

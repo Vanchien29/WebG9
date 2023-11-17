@@ -2,11 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Times New Roman', Times, serif;
 } 
 
 ul{
     list-style: none;
+    overflow: hidden;
 }
 
 a{
@@ -56,13 +57,255 @@ header ul{
     height: 5rem;
 }
 
-header span {
+header .khung span {
     position: absolute;
     display: none;
-    top: 105%;
+    top: 200%;
     z-index: 10;
-    background-color: #272424b3;
+    background-color: #FFFFFF;
     border-radius: 5px;
+    border: 1px solid #EEEE;
     padding: 5px;
+    width: 100px;
+}
+
+header .fullname-user {
+    max-width: 20%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-top: 0.8rem;
+}
+
+/* body  */
+.grid.wide {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.grid {
+    width: 100%;
+    display: block;
+    padding: 0;
+}
+.add-product, .search-product-bg {
+    font-size: 20px;
+    box-shadow: 0 0 2px;
+    border-radius: 10px;
+    position: relative;
+    top: 50px;
+}
+
+.add-product form {
+    display: flex;
+    width: 100%;
+}
+
+.add-product form > div {
+    width: 50%;
+    padding: 10px;
+}
+
+.add-product p, .search-product-bg p {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.add-product form div :not(:first-child) {
+    margin-top: 10px;
+}
+.add-product form div:nth-child(2) :nth-child(11) {
+    background-color: rgb(47, 189, 47);
+}
+.add-product form div:nth-child(2) :nth-child(11), .add-product form div:nth-child(2) :nth-child(12) {
+    height: 30px;
+    border: none;
     color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 5px;
+}
+.add-product form div:nth-child(2) :nth-child(12) {
+    background-color: rgb(80, 80, 201);
+}
+.add-product form input {
+    line-height: 30px;
+    width: 100%;
+    border: none;
+    border-bottom: solid;
+    outline: none;
+}
+.add-product form :nth-child(4) {
+    display: inline-block;
+}
+.add-product form label {
+    display: block;
+}
+.add-product form div:nth-child(1) :nth-child(9) {
+    border: none;
+}
+.search-product-bg {
+    width: 100%;
+    top: 70px;
+}
+.search-product-bg .search {
+    display: flex;
+    border-radius: 5px;
+    border: solid;
+    padding: 5px;
+    margin: 10px 0;
+}
+.search-product-bg .search-box {
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 20px 40px
+}
+.search-product-bg input {
+    width: 100%;
+    outline: none;
+    border: none;
+}
+.list-products {
+    position: relative;
+    top: 100px;
+    font-size: 15px;
+    font-weight: 900;
+    text-align: center;
+    background-color: white;
+    padding: 10px 30px;
+    border: solid;
+    border-radius: 10px;
+}
+.list-products > p {
+    font-size: 40px;
+}
+.products {
+    margin: 10px auto;
+    width: 100%;
+}
+.products > li:not(:last-child) {
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+.top-list {
+    background-color: #FFFFFF;
+    color: black;
+}
+.top-list ul, .item ul {
+    display: flex;
+}
+.top-list ul li:nth-child(1) {
+    line-height: 30px;
+    width: 10%;
+}
+.top-list ul li:nth-child(2) {
+    line-height: 30px;
+    width: 20%;
+}
+.top-list ul li:nth-child(3) {
+    line-height: 30px;
+    width: 30%;
+}
+.top-list ul li:nth-child(4) {
+    width: 15%;
+    line-height: 30px;
+}
+.top-list ul li:nth-child(5) {
+    width: 20%;
+    line-height: 30px;
+}
+.top-list ul li:nth-child(6) {
+    width: 5%;
+    line-height: 30px;
+}
+.item ul li:nth-child(1) {
+    width: 10%;
+    padding-top: 45px;
+}
+.item ul > li:not(:last-child) {
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+}
+.item ul li {
+    height: 140px;
+    line-height: 50px;
+}
+.item ul li:nth-child(2) {
+    width: 20%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item ul li:nth-child(3) {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    justify-content: center;
+}
+.item ul li:nth-child(4) {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    justify-content: center;
+}
+.item ul li:nth-child(5) {
+    width: 20%;
+    padding: 45px 20px 0 25px;
+}
+.item ul li:nth-child(6) {
+    width: 5%;
+    padding: 25px 2px 0 2px;
+}
+.delete-product {
+    background-color: rgb(195, 73, 73);
+}
+li button {
+    display: block;
+    width: 100%;
+    height: 30px;
+    margin: 10px auto;
+    border: none;
+    font-size: 10px;
+    overflow: hidden;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+}
+.edit-product {
+    background-color: rgb(80, 80, 201);
+}
+.list-page {
+    padding: 10px;
+    text-align: center;
+    list-style: none;
+}
+.list-page .page-current {
+    background-color: #272424;
+    color: white;
+}
+
+.list-page li {
+    user-select: none;
+    border: solid;
+    padding: 10px;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.trang{
+    padding-top: 2.5rem;
+    padding-bottom: 1.5rem;
+}
+.trang button{
+    width: 5%;
+    height: 2rem;
+}
+.trang button:hover{
+    background-color: black;
+    color: #FFFFFF;
 }

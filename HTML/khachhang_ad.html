@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="http://ctcy.com" crossorigin="test"></script>
+        <link rel="icon" href="../image/logo.jpg">
+        <link rel="stylesheet" href="../CSS/khachhang_ad.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Quản lí khách hàng</title>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <ul>
+                    <div class="logo">
+                        <a href="../HTML/index.html">
+                            <img src="../image/logo.jpg" alt="Không tìm thấy ảnh" style="width: 100%; height: 100%;">
+                        </a>
+                    </div>
+                    <div class="khung">
+                        <a href="../HTML/index.html">
+                            <i class="fa fa-home" aria-hidden="true" style="font-size: 1.8rem;"></i>
+                            <span>Trang chủ</span>
+                        </a>
+                    </div>
+                    <div class="khung">
+                        <a href="../HTML/sanpham_ad.html">
+                            <i class="fa fa-car" aria-hidden="true" style="font-size: 1.8rem;"></i>
+                            <span>Sản phẩm</span>
+                        </a>
+                    </div>
+                    <div class="khung">
+                        <a href="../HTML/donhang_ad.html">
+                            <i class="fa fa-shopping-cart" aria-hidden="true" style="font-size: 1.8rem;"></i>
+                            <span>Đơn hàng</span>
+                        </a>
+                    </div>
+                    <div class="khung">
+                        <a href="../HTML/khachhang_ad.html">
+                            <i class="fa fa-id-card-o" aria-hidden="true" style="font-size: 1.8rem;"></i>
+                            <span>khách hàng</span>
+                        </a>
+                    </div>
+                    <div class="khung">
+                        <a href="../HTML/thongke_ad.html">
+                            <i class="fa fa-bar-chart" aria-hidden="true" style="font-size: 1.8rem;"></i>
+                            <span>Thống kê</span>
+                        </a>
+                    </div>
+                    <div class="fullname-user">
+                        <div style="margin-right: 0.3rem;">
+                            <i class="fa fa-user-circle-o"></i>
+                        </div>
+                        <p>Cao Tiến Cường</p>
+                        <span>
+                            <i class="fa fa-sign-out" aria-hidden="true"></i>
+                            Đăng xuất
+                        </span>
+                    </div>
+                </ul>
+            </div>
+        </header>
+        <div class="search-customer-bg grid wide">
+            <div class="search-customer-box">
+              <div class="search-date">
+                <label for="date-begin">Từ ngày</label>
+                <input type="date" id="date-begin" />
+                <label for="date-end">Đến ngày</label>
+                <input type="date" id="date-end" />
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </div>
+              <div class="search-txt">
+                <select id="opt" onchange="check_option()">
+                  <option value="fullname">Tìm theo họ tên</option>
+                  <option value="user">Tìm theo tên đăng nhập</option>
+                  <option value="status">Tìm theo trạng thái</option>
+                </select>
+                <input id="search-txt" type="text" placeholder="Họ tên khách hàng" />
+                <select id="search-status" class="hide">
+                  <option value="Hoạt động">Hoạt động</option>
+                  <option value="Bị khóa">Bị khóa</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="list-customers grid wide">
+            <p>Danh sách khách hàng</p>
+            <div class="not-found hide">Không tìm thấy</div>
+            <ul class="customers">
+              <li class="top-list">
+                <ul>
+                  <li>STT</li>
+                  <li>HỌ TÊN</li>
+                  <li>TÊN ĐĂNG NHẬP</li>
+                  <li>NGÀY ĐĂNG KÝ</li>
+                  <li>TRẠNG THÁI</li>
+                </ul>
+              </li>
+              <li class="customer">
+                <ul>
+                  <li>1</li>
+                  <li>Cao Tiến Cường</li>
+                  <li>langvuong</li>
+                  <li>20-11-2023</li>
+                  <li>
+                    <div class="btn">
+                      <button
+                        type="submit"
+                        class="lock-customer"
+                        onclick="lock_customer('${listUsers[i].user}')"
+                      >
+                      <i class="fa fa-lock" aria-hidden="true"></i>
+                      </button>
+                      <span>Khóa</span>
+                    </div>
+                    <div class="btn">
+                      <button
+                        type="submit"
+                        class="delete-customer"
+                        onclick="delete_customer('${listUsers[i].user}')"
+                      >
+                      <i class="fa fa-times" aria-hidden="true"></i>
+                      </button>
+                      <span>Xóa</span>
+                    </div>
+                    <div class="btn">
+                      <button
+                        type="submit"
+                        class="info-customer"
+                        onclick="info_customer('${listUsers[i].user}')"
+                      >
+                        <i class="fa fa-search"></i>
+                      </button>
+                      <span>Thông tin</span>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+      
+            <ul class="list-page"></ul>
+          </div>
+    </body>
+</html>

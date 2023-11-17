@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="http://ctcy.com" crossorigin="test"></script>
+        <link rel="icon" href="../image/logo.jpg">
+        <link rel="stylesheet" href="../CSS/donhang_ad.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Quản lí đơn hàng</title>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <ul>
+                    <div class="logo">
+                        <a href="../HTML/index.html">
+                            <img src="../image/logo.jpg" alt="Không tìm thấy ảnh" style="width: 100%; height: 100%;">
+                        </a>
+                    </div>
+                    <div class="khung">
+                        <a href="../HTML/index.html">
+                            <i class="fa fa-home" aria-hidden="true" style="font-size: 1.8rem;"></i>
+                            <span>Trang chủ</span>
+                        </a>
+                    </div>
+                    <div class="khung">
+                        <a href="../HTML/sanpham_ad.html">
+                            <i class="fa fa-car" aria-hidden="true" style="font-size: 1.8rem;"></i>
+                            <span>Sản phẩm</span>
+                        </a>
+                    </div>
+                    <div class="khung">
+                        <a href="../HTML/donhang_ad.html">
+                            <i class="fa fa-shopping-cart" aria-hidden="true" style="font-size: 1.8rem;"></i>
+                            <span>Đơn hàng</span>
+                        </a>
+                    </div>
+                    <div class="khung">
+                        <a href="../HTML/khachhang_ad.html">
+                            <i class="fa fa-id-card-o" aria-hidden="true" style="font-size: 1.8rem;"></i>
+                            <span>khách hàng</span>
+                        </a>
+                    </div>
+                    <div class="khung">
+                        <a href="../HTML/thongke_ad.html">
+                            <i class="fa fa-bar-chart" aria-hidden="true" style="font-size: 1.8rem;"></i>
+                            <span>Thống kê</span>
+                        </a>
+                    </div>
+                    <div class="fullname-user">
+                        <div style="margin-right: 0.3rem;">
+                            <i class="fa fa-user-circle-o"></i>
+                        </div>
+                        <p>Cao Tiến Cường</p>
+                        <span>
+                            <i class="fa fa-sign-out" aria-hidden="true"></i>
+                            Đăng xuất
+                        </span>
+                    </div>
+                </ul>
+            </div>
+        </header>
+        <div class="search-order-bg grid wide">
+            <div class="search-order-box">
+              <div class="search-date">
+                <label for="date-begin">Từ ngày</label>
+                <input type="date" id="date-begin" />
+                <label for="date-end">Đến ngày</label>
+                <input type="date" id="date-end" />
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </div>
+              <div class="search-txt">
+                <select id="opt" onchange="check_option()">
+                  <option value="orderId">Tìm theo mã đơn hàng</option>
+                  <option value="user">Tìm theo tên đăng nhập</option>
+                  <option value="status">Tìm theo trạng thái</option>
+                </select>
+                <input id="search-txt" type="text" placeholder="Mã đơn hàng" />
+                <select id="search-status" class="hide">
+                  <option value="Đang chờ xử lý">Đang chờ xử lý</option>
+                  <option value="Đơn hàng đã bị hủy">Đơn hàng đã bị hủy</option>
+                  <option value="Đơn hàng đã được xác nhận">
+                    Đơn hàng đã được xác nhận
+                  </option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="list-orders grid wide">
+            <p>DANH SÁCH ĐƠN HÀNG</p>
+            <div class="not-found hide">Không tìm thấy</div>
+            <ul class="orders">
+              <li class="top-list">
+                <ul>
+                  <li>Mã đơn hàng</li>
+                  <li>Khách hàng</li>
+                  <li>Sản phẩm</li>
+                  <li>Tổng tiền</li>
+                  <li>Ngày giờ</li>
+                  <li>Trạng thái</li>
+                  <li>Hành động</li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="list-page"></ul>
+          </div>
+    </body>
+</html>
