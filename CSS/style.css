@@ -278,29 +278,98 @@ button{
 
 /* bảng bộ lọc*/
 .filter{
-    font-size: 16px;
-    margin-left:45px;
+    font-size: 18px;
+    margin-left: 45px;
     background-color:#ffffffff;
     width: 18%;
-    height: 400px;
+    min-height: 400px;
     border-radius:10px;
     float:left;
     text-align:left;
     border: 2px solid #EEEEEE;
     box-shadow: 2px 2px 2px 2px #EEEEEE;
     margin-top: 15px;
+    border-color: #00000032;
+    
 }
+
+.me summary::-webkit-details-marker {
+    display: none;
+}
+
+.me summary {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    outline: none; 
+    cursor: pointer;
+}
+
+#location-icon.rotate {
+    transform: rotate(180deg);
+}
+#location-icon{
+    float: right;
+    margin-right: 0px;
+}
+summary>img{
+    margin-right: 10px;
+}
+
 
 .me{
+   font-size: 20px;
     padding:20px;  
-    margin-left: 25px;  
+    margin-left: 15px;  
 }
 
-.me>ul{
-    
-    display:none;
-    color:#1AACAC;
+.me>ul>li{
+    width: 70%;
+    margin: 10px 0 10px 0;
+    color:#141416;
+    cursor: pointer;
+  
+    text-align: left ;
 }
+.me>ul>li:hover {
+    background-color: #f5f5f5;
+}
+.slidecontainer {
+   
+    width: 100%;
+  }
+  .slider {
+    width: 100%;
+    height: 25px;
+    background: #b31f1f;
+    outline: none;
+    opacity: 0.7;
+  }
+
+  /*  CSS THANH VUOT GIA TRỊ */
+  .slider:hover {
+    opacity: 1; /* Hiển thị đầy đủ khi di chuột qua */
+  }
+  /* Tay cầm trượt (sử dụng -webkit- (Chrome, Opera, Safari, Edge) và -moz- (Firefox) 
+  để ghi đè giao diện mặc định) */
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Ghi đè giao diện mặc định */
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background:#4CAF50;
+    cursor: pointer;
+  } 
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+  }
+  
+  /* @ */
+  
 
 .me:hover>ul{
     display:block;
@@ -364,8 +433,9 @@ button{
 
 }
     
-.content-items:hover{
-    transition: box-shadow 0.5s;
+.content-item:hover{
+    box-shadow: 0 0 11px rgba(85, 71, 122, 0.5); 
+    transition: 0.5s;
 }
 
 .content-item-text{
@@ -382,6 +452,30 @@ button{
     border-radius: 10px;
     width: 350px;
     height: 450px;
+}
+
+/* phần chuyển trang web */
+.paper_next{
+    margin: 50px 50px 0 0;
+    display: flex;
+   list-style: none;
+    flex-wrap: wrap;
+    max-width:50% ;
+    height: 50px;
+   
+    float:inline-end;
+}
+.paper_next>a>li>button{
+    border:2px solid black;
+    border-radius: 10%;
+    width: 50px;
+    height: 40px;
+    margin: 0 2px 0 5px;
+   
+   
+}
+.paper_next>a>li>button:hover{
+    background-color: #E7E9EB;
 }
 
 /* phần thông tin kết thúc footer */

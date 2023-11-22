@@ -224,7 +224,6 @@ header .fullname-user {
     padding-top: 45px;
 }
 .item ul > li:not(:last-child) {
-    border-top: 1px solid black;
     border-right: 1px solid black;
 }
 .item ul li {
@@ -304,8 +303,15 @@ li button {
 .trang button{
     width: 5%;
     height: 2rem;
+    border: 1px outset #272424;
+    border-radius: 3px;
 }
 .trang button:hover{
+    background-color: black;
+    color: #FFFFFF;
+}
+
+.page1{
     background-color: black;
     color: #FFFFFF;
 }

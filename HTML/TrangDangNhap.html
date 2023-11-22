@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="http://ctcy.com" crossorigin="test"></script>
+  <link rel="icon" href="../image/logo.jpg">
+  <link rel="stylesheet" href="../CSS/design.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>form login.com</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+        <ul>
+            <li class="logo"><a href="../HTML/index.html"><img src="../image/logo.jpg" alt="Không tìm thấy ảnh" style="width: 100%; height: 100%;"></a></li>
+            <li class="khung "><input type="text" id="myInput" placeholder="Tim kiếm xe" style="font-size: 14px;"> <i class="fa fa-search"></i></li>
+            <li class="khung my-menu-button" id="account"><a href="">Mua xe </a><i class="fa fa-angle-down" aria-hidden="true"></i>
+                <div role="tooltip" class="car-list-show" data-popper-placement="bottom-start">
+                    <div class="row-pan-3 px-4 border border_l">
+                        <h2 class="text-base">HÃNG XE PHỔ BIẾN</h2>
+                        <a class="column1" href="">Toyota</a>
+                        <a class="column1" href="">Honda</a>
+                        <a class="column1" href="">BMW</a>
+                    </div>
+                    <div class="row-pan-3 px-8 border">
+                        <h2 class="text-base">DÒNG XE PHỔ BIẾN</h2>
+                        <a class="column1" href="">Toyota Fortuner</a>
+                        <a class="column1" href="">BMW 320 GT</a>
+                        <a class="column1" href="">Toyota Corolla Cross</a>
+                    </div>
+                    <div class="row-pan-3 px-4 border border_r">
+                        <h2 class="text-base">GIÁ XE</h2>
+                        <a class="column1" href="">Dưới 500 triệu</a>
+                        <a class="column1" href="">Từ 500 - 1 tỷ</a>
+                        <a class="column1" href="">Trên 1 tỷ</a>
+                    </div>
+                </div>
+            </li>
+            <li class="khung"><a href="../HTML/banxe.html">Bán xe</a></li>
+            <li class="khung"><a href="../HTML/GioiThieu.html">Giới thiệu</a></li>
+            <li class="khung"><a href="../HTML/tintuc.html">Tin tức</a></li>
+            <li class="khung"><i class="fa fa-phone"></i><a href=""> 0962 385 165</a></li>
+            <li class="khung" id="account"><i class="fa fa-user-circle-o"></i>  <a href="">Tài khoản </a><i class="fa fa-angle-down" aria-hidden="true"></i>
+                <div role="tooltip" class="account" data-popper-placement="bottom-start">
+                    <div class="jss3"></div>
+                    <div class="options" id="options">
+                      <a href="../HTML/TrangDangNhap.html">
+                        <button class="leading" onclick="window.location.href =''">
+                            <span>Đăng nhập</span></button>
+                    </a>
+                    <a>
+                        <button class="leading" onclick="window.location.href =''">
+                            <span>Đăng kí</span></button>
+                    </a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+  </header>
+  <div id="wrapper">
+    <div class="login-wrapper">
+      <form action="" id="form login">
+        <h1 class="form-heading">Đăng nhập</h1>
+
+        <div class="form-group">
+          <i class="far fa-user"></i>
+
+          <input type="text" class="form-input" placeholder="Vd: 0905529352" />
+        </div>
+        <div class="form-group">
+          <i class="fas fa-key"></i>
+          <input type="password" class="form-input" placeholder="Nhập mật khẩu có ít nhất 10 kí tự" />
+          <div id="eye">
+            <i class="far fa-eye"></i>
+          </div>
+        </div>
+        <input type="submit" value="Đăng nhập" class="form-submit" />
+        <div>
+          <button id="qmk"><span> Quên mật khẩu</span></button>
+          <span id="dky">Chưa có tài khoản?</span>
+          <button id="y"><span>Đăng ký</span></button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <footer class="endtable">
+    <div class="endtable_1">
+      <div class="text1">
+        <img src="../image/logo1.png" alt="" style="height: 80px; align-items: center;">
+        <p style="text-align: justify; font-size: 15px;">CarCTCY-9 - nền tảng hàng đầu trong lĩnh vực xe tại Việt Nam.
+          Cam kết mang đến cho khách hàng trải nghiệm hoàn toàn minh bạch, nhanh chóng và đáng tin cậy.</p>
+        <ul>
+          <li class="end_img"> <img src="../image/facebook.jpg" alt=""> </li>
+          <li class="end_img"> <img src="../image/tiktok.jpg" alt=""> </li>
+          <li class="end_img"> <img src="../image/youtube.jpg" alt=""> </li>
+          <li class="end_img"> <img src="../image/linkedin.jpg" alt=""> </li>
+
+        </ul>
+      </div>
+      <div class="text1 top-10 padding-left">
+        <h3 class="font-size-20" style="color: white;">Hỗ trợ</h3>
+
+        <li class="t">Mua xe bảo hiểm ô tô</li>
+        <li class="t">Trả góp mua xe</li>
+        <li class="t">Câu hỏi thường gặp</li>
+        <li class="t">Liên hệ hỗ trợ</li>
+
+      </div>
+      <div class="text1 top-10 padding-left">
+        <h3 class="font-size-20" style="color: white;">Dịch Vụ</h3>
+
+        <li class="t">Mua xe ô tô</li>
+        <li class="t">Bán xe ô tô</li>
+        <li class="t">Trở thành cộng tác viên</li>
+        <li class="t"> Báo giá cửa hàng</li>
+
+      </div>
+      <div class="text1">
+        <h3 style="margin-bottom: 30px; color: white; margin-top: 10px;" class="font-size-20">Công ty thành viên</h3>
+        OtoS - Trang đăng tin bán xe uy tín tại Việt Nam
+      </div>
+    </div>
+
+    <div class="endtable_2">
+
+      <p>CÔNG TY TNHH XE CarCTCY-9. Hotline: 0348338544 (Toàn quốc) Số ĐKKD: 4010 <br>
+
+        <br>
+        Địa chỉ: 273, đường An Dương Vương, phường 3, quận 3, Thành Phố Hồ Chí Minh, Việt Nam. ©2023 by Car Classifieds
+        Limited Liability Company.
+        <br> <br> CarCTCY-9 Vietnam là một thành viên của fram^ Investments
+      </p>
+    </div>
+
+  </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="../javascript/design.js"></script>
+
+</html>
