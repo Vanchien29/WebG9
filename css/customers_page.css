@@ -19,6 +19,7 @@
 
 .list-customers p {
   margin-bottom: 10px;
+  color:rgb(211, 211, 20) ;
 }
 .search-customer-bg input,
 .search-customer-bg label {
