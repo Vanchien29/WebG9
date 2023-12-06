@@ -35,11 +35,13 @@
         </div>
         <form>
           <div>
-            <img
+            <div style="position: relative;">
+              <img
               class="img-edit"
               src="./img/imgs/Thêm ảnh 358 x 358.png"
-              alt=""
-            />
+              alt=""/>
+              <button class="img-edit-x" onclick="xoaHinhAnh(event)" style="position: absolute; top: -15px; right : 15px ;background-color: white; border: 2px solid white;">X</button>
+            </div>
             <label for="edit-title">Tên sản phẩm</label>
             <input
               id="edit-title"
@@ -144,7 +146,7 @@
             <option value="SAMSUNG">SAMSUNG</option>
             <option value="XIAOMI">XIAOMI</option>
             <option value="OPPO">OPPO</option>
-            <option value="REALME">REALME</option>
+            <option value="REALME">RsiEALME</option>
           </select>
           <label for="product-price-show">Giá hiển thị</label>
           <input

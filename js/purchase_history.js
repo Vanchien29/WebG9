@@ -20,7 +20,7 @@ function show(order, products, date) {
   </ul>
 </li>`;
 }
-//danh sách đơn hàn
+//danh sách đơn hàng
 show_orders();
 function show_orders() {
   let userLogin = JSON.parse(localStorage.getItem("userLogin"));

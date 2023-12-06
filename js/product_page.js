@@ -89,6 +89,12 @@ function addProduct() {
   loadPage();
 }
 //--------chỉnh sửa sản phẩm--------
+function xoaHinhAnh(event) {
+  var imgEdit = document.querySelector(".img-edit");
+  imgEdit.src = "";  // Đặt giá trị src thành chuỗi trống để xóa hình ảnh
+
+  event.preventDefault(); // Ngăn chặn hành vi mặc định của button
+}
 let img_edit = document.querySelector(".img-edit");
 let edit_product_bg = document.querySelector(".editproduct-bg");
 let edit_title = document.getElementById("edit-title");
