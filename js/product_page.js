@@ -28,7 +28,7 @@ function showProducts(item) {
           <ul>
             <li>${item.productId}</li>
             <li>
-              <img
+              <img class="img-edit"
                 src="${item.img}"
                 alt=""
               />
