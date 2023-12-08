@@ -195,3 +195,41 @@
   color: white;
   cursor: pointer;
 }
+.address{
+display: table-cell;
+  min-width: 200px;
+  height: 200px;
+  background-color:white ;
+  border-radius: 10px;
+  border:1px solid;
+  flex-direction: column;
+  padding: 20px;
+}
+.btnadd {
+  background-color: #272424;
+  color: aliceblue;
+  border-radius: 15px;
+  padding: 10px;
+  margin-top: 20px;
+  font-weight: 700;
+  width: 40%;
+  text-align: center;
+  display: grid;
+}
+.address input{
+  border-radius: 10px;
+  font-size:20px;
+  font-weight: 20px;
+  margin: 10px;
+  width: auto;
+  height: 30px;
+  border:none;
+background-color:#f3f3f3;
+}
+.form-group_ad input{
+  font-size:20px;
+  font-weight: 20px;
+  margin: 15px;
+  width: auto;
+  height: 30px;
+}
