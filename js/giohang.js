@@ -74,6 +74,16 @@ function total_price_bill() {
 }
 //nút "mua ngay"
 function btn_pay_now() {
+  //hàm báo lỗi nhập thông tin / chiến
+  var n = document.getElementById("myname").value;
+  var d=document.getElementById("myaddress").value;
+  var sdt=document.getElementById("myphone").value;
+  if(n==""|| d==""|| sdt==""){
+   alert("NHẬP ĐỦ THÔNG TIN TÊN , SDT VÀ ĐỊA CHỈ GIAO HÀNG !");
+    //n:Request("VUI long nhap đủ tên , địa chỉ và sdt !");
+    return false;
+  }
+  // Chiến
   if (
     document.querySelector(".muangay").classList.contains("muangay-active") ==
     false
@@ -122,6 +132,26 @@ function showCart() {
   <i class="fa-solid fa-arrow-left" onclick="back()"></i>
   <p>Giỏ hàng của bạn</p>
 </div>
+
+<div class="btnadd" >Địa Chỉ giao hàng của bạn</div>
+<form class="address">
+
+<div class="form-group">
+<label for="myname">Nhập tên:</label>
+<input type="text" id="myname" name="diachi">
+</div>
+
+<div class="form-group">
+<label for="myphone">Số điện thoại:</label>
+<input type="tel" name="sdt" id="myphone">
+</div>
+
+<div class="form-group_ad">
+<label for="myinput">Nhập địa chỉ giao hàng:</label>
+<input type="text" id="myaddress" name="diachi">
+</div>
+
+ </form> 
 <div class="hdbt">Giỏ hàng</div>
 <div class="select">
   <input
@@ -132,6 +162,7 @@ function showCart() {
   />
   <label for="myCheckbox">Chọn tất cả</label>
   <p onclick="delete_array_product_cart()">Xoá tất cả sản phẩm đã chọn</p>
+  
 </div>`;
     //chạy vòng lặp để show các sản phẩm trong giỏ
     for (let i = 0; i < userLogin.cart.length; i++) {
@@ -165,6 +196,8 @@ function showCart() {
     total_price_bill(); //tính tổng tiền các sản phẩm được check
   }
 }
+
+
 //check box cho sản phẩm vừa được thêm vào giỏ
 function newly_added_product() {
   let product = JSON.parse(localStorage.getItem("newly-added-product"));
